@@ -17,7 +17,7 @@ function showArguments(f) {
         //console.log(`   function arguments: ${args}`);
 
         let ret = f.apply(null, args);
-        //let ret = f.call(this, ...args); the same with call method
+        //let ret = f.call(null, ...args); // the same with call method
 
         console.log(`   function return: ${ret}`);
 
