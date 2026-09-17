@@ -214,8 +214,9 @@ Save the result in a file named `04-counter-digits.js`.
 
 ## Exercise 5: Timestamped console output
 
-Override the default `console.log` behavior so that every message is preceded by
-the current date and time.
+Override the default `console.log` behavior so that every message is preceded by the current date and time.
+
+**Note:** Use `Date()` to get a string with the current date and time in the default format.
 
 ### Tasks
 
