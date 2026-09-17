@@ -55,7 +55,7 @@ Implement the following function in the three different forms below:
 - anonymous function expression
 - arrow function
 
-The function must count how many digits a number has without converting it to a string.
+The function must count how many digits are in the integer part of a number, without converting the number to a string.
 
 <details>
 <summary>Hint</summary>
