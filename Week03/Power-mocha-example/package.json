@@ -1,0 +1,15 @@
+{
+  "name": "power-mocha-example",
+  "version": "1.0.0",
+  "description": "Example of Mocha testing for the built-in power operator in JS.",
+  "license": "ISC",
+  "author": "Fernanda Passos",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.2"
+  }
+}
