@@ -1,9 +1,11 @@
-import assert from 'assert';
+"use strict";
+
+import assert from 'assert/strict';
 
 /**
  * Mocha test suite for the JavaScript exponentiation operator (**).
  * This suite verifies the correctness of the operator under various conditions
- * using the built-in 'assert' module.
+ * using the built-in 'assert/strict' module.
  *
  * To run this test:
  * 1. Ensure you have Node.js installed.
@@ -53,10 +55,10 @@ describe('The exponentiation operator (**)', () => {
        // To correct this, needs to use an arbitrary floating-point representation: 
        // https://github.com/MikeMcl/decimal.js
         it('0.1 to the power of 2 should be 0.01', () => {
-            assert.strictEqual(Math.pow(0.1, 2), 0.01);
+            assert.strictEqual(0.1 ** 2, 0.01);
         });
        // Floating-point representation error causes residual error in the result.
-        it('0.1 to the power of 2 should be 0.04', () => {
+        it('0.2 to the power of 2 should be 0.04', () => {
             assert.strictEqual(0.2 ** 2, 0.04);
         });
     });
