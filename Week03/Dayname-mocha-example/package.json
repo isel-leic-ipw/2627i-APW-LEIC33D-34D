@@ -1,17 +1,17 @@
 {
-  "name": "dayname-example",
+  "name": "dayname",
   "version": "1.0.0",
   "description": "Day name example",
-  "license": "ISC",
-  "author": "",
-  "type": "module",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "mocha"
   },
+  "author": "Fernanda Passos",
+  "license": "ISC",
   "devDependencies": {
     "mocha": "^11.7.2"
   }
