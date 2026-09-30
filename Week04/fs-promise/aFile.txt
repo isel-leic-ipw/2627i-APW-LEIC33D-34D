@@ -1,0 +1,4 @@
+This is an example of a file.
+This is the second line.
+This is the third line.
+This is the end!
