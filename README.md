@@ -26,4 +26,4 @@ The [Wiki](https://github.com/isel-leic-ipw/2627i-APW-LEIC33D-34D/wiki) contains
 
 ## Assignments
 
-TBA
+- [A1 (individual)](https://github.com/isel-leic-ipw/2627i-APW-LEIC33D-34D/wiki/APW-2627-A1)
