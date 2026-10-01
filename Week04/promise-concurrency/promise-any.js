@@ -10,9 +10,9 @@ Promise.any(promiseArray)
     .then(resp => resp.text())
     .then(text => text.length)
     .then(len => console.log(len))
-    .catch(e => console.error("ERROR!", e));
+    .catch(processAggregateError);
 
-// An implementation of Promise.any:
+// My implementation of Promise.any:
 function promiseAny(arrayPromises){
     let count = 0;
     let rejectArray = [];
@@ -31,3 +31,11 @@ function promiseAny(arrayPromises){
     });
 }
 
+// This function processes the AggregateError object returned by 
+// Promise.any when all promises are rejected.
+//  err: AggregateError object
+function processAggregateError(err) {
+    console.log("AggregateError:", err.message);
+    for (let e of err.errors)
+        console.log("Error:", e.message);
+}

@@ -2,9 +2,10 @@ const urlArray = [
     "https://eloquentjavascript.net/05_higher_order.html",
     "https://eloquentjavascript.net/11_async.html",
     "https://eloquentjavascript.net/10_modules.html"
-    , "http://not.exist"
+//    , "http://not.exist"
 ];
 
+//promiseArray = [fetch(urlArray[0]), fetch(urlArray[1]), fetch(urlArray[2])];
 //promiseArray = urlArray.map(url => fetch(url));
 
 // For each fetch, verify the response status and reject if not ok
