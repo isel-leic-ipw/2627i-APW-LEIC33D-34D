@@ -1,0 +1,7 @@
+Example of file:
+
+A file for testing...
+
+More lines
+More lines
+More example lines

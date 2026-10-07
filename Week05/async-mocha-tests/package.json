@@ -1,0 +1,17 @@
+{
+  "name": "async-mocha-tests",
+  "version": "1.0.0",
+  "description": "Async Mocha test samples",
+  "author": "Professor",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^12.0.3"
+  }
+}

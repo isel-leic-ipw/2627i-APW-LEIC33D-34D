@@ -1,0 +1,12 @@
+import { fetchLineCount } from "../functions/fetch-line-count.mjs";
+
+const url = "https://eloquentjavascript.net/06_object.html";
+const url2 = "https://eloquentjavascript.net/notfound.html"; // This URL is intentionally incorrect to demonstrate error handling
+
+fetchLineCount(url)
+    .then(lineCount => console.log("URL:", url, "Line count:", lineCount))
+    .catch(error => console.error("Error fetching line count for", url, ":", error));
+
+fetchLineCount(url2)
+    .then(lineCount => console.log("URL:", url2, "Line count:", lineCount))
+    .catch(error => console.error("Error fetching line count for", url2, ":", error));
