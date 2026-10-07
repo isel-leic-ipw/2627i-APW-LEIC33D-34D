@@ -1,5 +1,5 @@
 //const URL = "https://api.chucknorris.io/jokes/mdtKGns-QgSMtKPCSRnrNA";
-const URL = "https://eloquentjavascript2.net/11_async.html"
+const URL = "https://eloquentjavascript.net/11_async.html"
 //const URL1 = "https://api.chucknorris.io/jokes/mdtKGns-QgSMtKPCSRnrNA";
 const URL1 = "https://eloquentjavascript.net/11_async.html"
 
