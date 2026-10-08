@@ -1,0 +1,33 @@
+# RAWG API Samples
+# The API documentation is available at [https://rawg.io/apidocs](https://rawg.io/apidocs).
+# The API key is stored in the `.env` file and is accessed using the `$dotenv` variable.
+#    RAWG_API_KEY=XXXXXXXXXXXXXXX
+
+### Get games
+GET https://api.rawg.io/api/games?key={{$dotenv RAWG_API_KEY}}
+Host: api.rawg.io
+
+#### Get games (page 2)
+GET https://api.rawg.io/api/games?key={{$dotenv RAWG_API_KEY}}&page=2
+Host: api.rawg.io
+
+#### Get games (page 3 with 50 results)
+GET https://api.rawg.io/api/games?key={{$dotenv RAWG_API_KEY}}&page=3&page_size=50
+Host: api.rawg.io
+
+### Search Forza Horizon
+GET https://api.rawg.io/api/games?key={{$dotenv RAWG_API_KEY}}&search=forza%20horizon
+Host: api.rawg.io
+
+### Get a game (GTA V)
+GET https://api.rawg.io/api/games/3498?key={{$dotenv RAWG_API_KEY}}
+Host: api.rawg.io
+
+### Get a game (Rocket League)
+GET https://api.rawg.io/api/games/3272?key={{$dotenv RAWG_API_KEY}}
+Host: api.rawg.io
+
+### Get a game (Forza Horizon 5)
+GET https://api.rawg.io/api/games/622492?key={{$dotenv RAWG_API_KEY}}
+Host: api.rawg.io
+
