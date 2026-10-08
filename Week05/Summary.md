@@ -5,4 +5,6 @@
 
 ## Oct-08 (TP):
 - Support to the first assignment: Part 2.
-    - Exploring the API. 
+    - Exploring the RAWG Video Games API.
+    - [REST Client samples](../Week05/rawg-api-samples/requests-rawg-api.http).
+    - [JS-fetch samples](../Week05/rawg-api-samples/test-api-rawg.js).
