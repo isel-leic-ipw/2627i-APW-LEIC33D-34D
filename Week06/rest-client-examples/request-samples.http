@@ -1,0 +1,66 @@
+### Simple Get request to example.com
+GET http://example.com/ HTTP/1.1
+Host: example.com
+
+
+### Simple Get request to example.com (with only the path in the request line)
+GET / HTTP/1.1
+Host: example.com
+
+
+### Example of a Options request
+OPTIONS / HTTP/1.1
+Host: info.cern.ch
+
+
+### Example of a Get request to a website that echoes the request made
+### Note the default scheme http in the response
+GET / HTTP/1.1
+Host: echo.free.beeceptor.com
+
+
+### Example of a Get request to a website that echoes the request made
+### Note the scheme https in the response
+GET https://echo.free.beeceptor.com/ HTTP/1.1
+Host: echo.free.beeceptor.com
+
+
+### Replying the request made by Chrome browser
+GET /hypertext/WWW/TheProject.html HTTP/1.1
+Host: info.cern.ch
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+
+
+### Post request to a website that echoes the value that was posted using URL Encoded format.
+POST / HTTP/1.1
+Host: echo.free.beeceptor.com
+Content-Type: application/x-www-form-urlencoded
+
+acronym=URL&meaning=Uniform%20Resource%20Location
+
+
+### Post request to a website that echoes the value that was posted using JSON format.
+POST / HTTP/1.1
+Host: echo.free.beeceptor.com
+Content-Type: application/json
+
+{
+    "acronym": "JSON",
+    "meaning": "JavaScript Object Notation"
+}
+
+
+### Get request in local server
+# Example with a local server in Python:
+# python3 -m http.server --directory ./2627i-APW-LEIC33D-34D.wiki 8000
+GET / HTTP/1.1
+Host: localhost:8000
+
+
