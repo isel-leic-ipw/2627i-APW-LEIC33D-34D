@@ -1,0 +1,22 @@
+### GET Hello World message
+
+GET http://localhost:8000/
+
+### Express returns 404 Not Found by default
+
+POST http://localhost:8000/
+
+...
+
+###
+
+DELETE http://localhost:8000/
+
+###
+
+PUT http://localhost:8000/
+
+...
+
+###
+GET http://localhost:8000/hello
