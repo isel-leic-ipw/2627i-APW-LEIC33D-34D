@@ -1,0 +1,82 @@
+### Get all shopping lists
+GET /api/lists HTTP/1.1
+Host: localhost:8000
+
+### Get a specific shopping list by ID
+GET /api/lists/1 HTTP/1.1
+Host: localhost:8000
+
+### Create a new shopping list
+POST /api/lists HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+
+{
+  "name": "New Shopping List"
+}
+
+### Get the new shopping list by ID
+GET /api/lists/3 HTTP/1.1
+Host: localhost:8000
+
+### Update the name of a shopping list
+PUT /api/lists/3 HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json  
+
+{
+  "name": "Shopping for Saturday dinner"
+}
+
+### Delete a shopping list
+DELETE /api/lists/2 HTTP/1.1
+Host: localhost:8000
+
+### ----- Items -----
+
+### Create an item in a specific shopping list
+POST /api/lists/3/items HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+  
+{
+  "name": "Pasta",
+  "quantity": 1,
+  "bought": false
+}
+
+### Create another item in a specific shopping list
+POST /api/lists/3/items HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+  
+{
+  "name": "Shrimps",
+  "quantity": 10,
+  "bought": false
+}
+
+
+### Delete an item in a specific shopping list
+DELETE /api/lists/1/items/1 HTTP/1.1
+Host: localhost:8000
+
+### Create an item in the same shopping list to verify the the unique id
+POST /api/lists/1/items HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+
+{
+  "name": "Milk",
+  "quantity": 1,
+  "bought": false
+}
+
+### Update an item in a specific shopping list
+PATCH /api/lists/1/items/2 HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json  
+
+{
+  "bought": false
+}

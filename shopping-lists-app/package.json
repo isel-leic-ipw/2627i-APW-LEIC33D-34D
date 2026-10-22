@@ -1,0 +1,14 @@
+{
+  "name": "shopping-lists-app",
+  "version": "0.0.1",
+  "description": "A very simple implementation of the Shopping Lists App.",
+  "author": "Professor",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}

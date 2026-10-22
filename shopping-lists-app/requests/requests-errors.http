@@ -1,0 +1,113 @@
+### ------- Testing Lists -------
+
+### Get an invalid shopping list by ID
+GET /api/lists/999 HTTP/1.1
+Host: localhost:8000
+
+### Create a list with missing name
+POST /api/lists HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json  
+
+{
+    "nome": "New Shopping List"
+}
+
+### Create a list with empty name
+POST /api/lists HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json  
+
+{
+    "name": "   "
+}
+
+### Create a list with missing Content-Type header
+POST /api/lists HTTP/1.1
+Host: localhost:8000 
+
+
+### Update a shopping list with invalid ID
+PUT /api/lists/999 HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json 
+
+{
+  "name": "Shopping for Saturday dinner"
+}
+
+### Update a shopping list with missing name
+PUT /api/lists/2 HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json 
+
+{
+}
+
+### Update a shopping list missing Content-Type header
+PUT /api/lists/2 HTTP/1.1
+Host: localhost:8000
+
+
+### Delete a shopping list with invalid ID
+DELETE /api/lists/999 HTTP/1.1
+Host: localhost:8000
+
+### ------- Testing Items ------- 
+
+### Create an item in a invalid shopping list
+POST /api/lists/999/items HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json  
+
+{
+  "name": "Pasta",
+  "quantity": 1,
+  "bought": false
+}
+
+### Create an item in a specific shopping list with negative quantity
+POST /api/lists/2/items HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+
+{
+  "name": "Pasta",
+  "quantity": -1,
+  "bought": false
+}
+
+### Create an item in a specific shopping list with missing name
+POST /api/lists/2/items HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json  
+
+{
+}
+
+### Delete an item in an specific shopping list with invalid list ID
+DELETE /api/lists/999/items/1 HTTP/1.1
+Host: localhost:8000
+
+### Delete an item in a specific (valid) shopping list with invalid item ID
+DELETE /api/lists/1/items/999 HTTP/1.1
+Host: localhost:8000
+
+### Update an item in a specific shopping list with invalid list ID (and also item ID)
+PATCH /api/lists/999/items/1 HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json  
+
+{
+  "bought": false
+}
+
+### Update an item in a specific shopping list with invalid item ID
+PATCH /api/lists/1/items/999 HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json  
+
+{
+  "bought": false
+}
+
