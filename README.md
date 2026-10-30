@@ -27,3 +27,9 @@ The [Wiki](https://github.com/isel-leic-ipw/2627i-APW-LEIC33D-34D/wiki) contains
 ## Assignments
 
 - [A1 (individual)](https://github.com/isel-leic-ipw/2627i-APW-LEIC33D-34D/wiki/APW-2627-A1)
+- [A2 - Part1 (group)](https://github.com/isel-leic-ipw/2627i-APW-LEIC31N/wiki/APW_IP-2627-1-A2)
+    - Classroom repository and delivery: 
+        - [LEIC 33D](https://classroom50.org/isel-leic-ipw/apw-2026-33d/assignments/2nd-practical-assignment-a2-gamer/accept)
+        - [LEIC 34D](https://classroom50.org/isel-leic-ipw/apw-2026-34d/assignments/2nd-practical-assignment-a2-gamer/accept)
+    - Students form groups: the first student creates the group when accepting, then adds teammates up to the max group size.
+    - Groups must consist of 2 to 3 students.
