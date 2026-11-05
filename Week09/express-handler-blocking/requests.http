@@ -1,0 +1,24 @@
+### Testing the blocking request handler
+POST /register HTTP/1.1
+Host: localhost:3001
+Content-Type: application/json
+
+{
+  "username": "john_doe",
+  "password": "securepassword123"
+}
+
+### Getting the status of the server: 
+# it can took a while because the previous request is blocking the event loop
+GET /status HTTP/1.1
+Host: localhost:3001
+
+### Testing the blocking request handler with async function
+POST /registerAsync HTTP/1.1
+Host: localhost:3001
+Content-Type: application/json
+
+{
+  "username": "john_doe",
+  "password": "securepassword123"
+}
