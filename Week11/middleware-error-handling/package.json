@@ -1,0 +1,16 @@
+{
+  "name": "Test middleware",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node test-server.mjs",
+    "start-dev": "nodemon test-server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fernanda Passos",
+  "license": "ISC",
+  "description": "App to test express middleware.",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}

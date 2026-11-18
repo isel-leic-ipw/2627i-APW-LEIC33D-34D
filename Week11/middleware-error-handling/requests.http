@@ -1,0 +1,12 @@
+GET /aFile.txt
+Host: localhost:7200
+
+###
+
+GET /inexistent-file
+Host: localhost:7200
+
+###
+
+GET /
+Host: localhost:7200
