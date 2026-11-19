@@ -6,14 +6,13 @@ const app = express();
 
 app.get('/:filename', readFile); // readFile returns a Promise
 
-/*
-// 404 Not Found handler: creates a 404 Error and passes it to the error handler middleware
 app.use((req, res, next) => {
-    const error = new Error(`Path not found - ${req.method} ${req.originalUrl}`);
-    error.statusCode = 404;
-    next(error);
+    res.status(404).json({
+        statusCode: 404,
+        error: 'Not Found'
+    });
 });
-*/
+
 app.use(errorHandler);
 
 app.listen(PORT, () =>
