@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title> GET Form Method </title>
+	</head>
+	<body>
+        <h3> Testing GET Form Method: </h3>
+        <form name="greetingGetForm" action="/greeting" method="GET">
+            <div>
+            <label for="sayId">What greeting do you want to say?</label>
+            <input name="say" id="sayId" value="Hi">
+            </div>
+            <div>
+            <label for="toId">Who do you want to say it to?</label>
+            <input name="to" id="toId" value="Mom">
+            </div>
+            <div>
+            <input type="submit" value="Send my greetings">
+            </div>
+        </form>
+        <br><br>
+        <h3> Testing POST Form Method: </h3>
+        <form name="greetingPostForm" action="/greeting" method="POST" autocomplete="on">
+            <div>
+            <label for="sayId">What greeting do you want to say?</label>
+            <input name="say" id="sayId" required>
+            </div>
+            <div>
+            <label for="toId">Who do you want to say it to?</label>
+            <input name="to" id="toId" required>
+            </div>
+            <div>
+            <button>Send my greetings</button>
+            </div>
+        </form>
+    </body>
+</html>

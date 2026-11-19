@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<body>
+
+<section class="container-fluid p-5 bg-primary text-light text-center">
+    <h1>CSS Layout with Bootstrap</h1>
+    <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+    <p>Resize the browser window to see the responsive effect.</p>
+</section>
+
+<header class="container-fluid p-3 bg-secondary text-light">
+  <h2>Cities</h2>
+</header>
+
+<section class="container-fluid">
+  <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a class="nav-link" href="#">London</a></li>
+      <li><a class="nav-link" href="#">Paris</a></li>
+      <li><a class="nav-link" href="#">Tokyo</a></li>
+    </ul>
+    </div>
+  </nav>
+  
+  <article class="container-fluid p-3 bg-light text-dark">
+    <h2>London</h2>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+
+<footer class="container-fluid p-5 bg-primary text-light">
+  <p class="text-center">Contact: footer@mail.pt</p>
+</footer>
+
+</body>
+</html>
